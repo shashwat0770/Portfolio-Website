@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Shashwat Tripathi</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><h3>Home</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service"><h3>Spotlight</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><h3>Skills</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><h3>Projects</h3></a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Shashwat Tripathi</span>
+          </h2>
+          <p class="text-muted">
+            <h3>
+              A proficient Full-Stack Developer with a strong command over Data Structures and Algorithms (DSA). 
+            Building scalable, efficient, and innovative solutions with expertise across frontend and backend.
+            </h3>
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onclick="document.location='https://www.linkedin.com/in/shashwat-tripathi-8a09a7325/'" target="_blank">
+             Let's Connect
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Expert in Full-Stack Development <br />
+          & Data Structures & Algorithms
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>LeetCode</h4>
+              <p class="text-muted">
+                <h5>
+                  Ranked in the top 3.64% on LeetCode with 400+ DSA problems solved, achieving 
+                  a peak rating of 1928 and the prestigious Knight rank.
+                </h5>
+              </p>
+              <a href="https://leetcode.com/u/shashwat35/" target="_blank" class="link">Click here to visit my profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>LinkedIn</h4>
+              <p class="text-muted">
+                <h5>
+                  Connect with me for insights on full-stack development, DSA, 
+                and scalable solutions. Open to networking and collaboration in the tech industry!
+                </h5>
+                
+              </p>
+              <a href="https://www.linkedin.com/in/shashwat-tripathi-8a09a7325/" target="_blank" class="link">Click here to visit my profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>GitHub</h4>
+              <p class="text-muted">
+                <h5>
+                  An active GitHub contributor with 5+ full-stack projects 
+                  showcasing expertise in React, Node.js, and MongoDB.
+                </h5>
+              </p>
+              <a href="https://github.com/shashwat0770"  target="_blank"  class="link">Click here to visit my profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML , CSS & JS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Node JS & React JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">MongoDB , MySQL , Docker</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">Data Structures & Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>From Code to Scalable Systems – A Problem Solver at Heart</h3>
+            <p class="text-muted">
+              <h4>
+                Skilled in full-stack development with hands-on experience in React, 
+                Node.js, and MongoDB. I thrive on solving complex problems, evidenced 
+                by my Knight badge on LeetCode and ranking among the top 3.64% of users worldwide.
+              </h4>
+            </p>
+
+            <p class="text-muted">
+              <h4>
+                Constantly pushing boundaries, I strive to merge innovation with technical excellence.
+              </h4>
+              
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a href="https://drive.google.com/file/d/1AyTmTHHQt7q51qEe8eoDkpJm0kX7KTpt/view?usp=drivesdk" target="_blank" 
+                style="text-decoration: none;color: #fff;"
+                >Visit my Resume</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Projects</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3 class="card-title">Roots & Routes</h3>
+                <p>Roots & Routes is a travel platform celebrating India’s rich culture, 
+                  offering experiences like virtual heritage tours, AR monument interactions, 
+                  and personalized cultural itineraries.</p>
+                <span class="badge bg-secondary badge-pill"><h5>React JS</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>Node JS</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>MongoDB</h5></span
+                ><br />
+                <a href="https://shashwattripathi08.wixsite.com/rootsandroutes" target="_blank"  class="link">Click here to visit Live Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/currency-converter.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Green Impact</h3>
+                <p>GreenImpact is a platform where users can sell their plastic waste, verified through AI/ML 
+                  screening, and earn cashback points redeemable on third-party websites for shopping. </p>
+                <span class="badge bg-secondary badge-pill"><h5>React JS</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>Node JS</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>MongoDB</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>AI & ML</h5></span
+                ><br />
+                <a href="https://shashwattripathi87.wixsite.com/mysite"  target="_blank" class="link">Click here to visit Live Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/dictionary.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3 class="card-title">ChatVista</h3>
+                <p>ChatVista is a real-time chatting application built with the MERN stack, offering 
+                  seamless messaging, rich media support, and a smooth user experience.</p>
+                <span class="badge bg-secondary badge-pill"><h5>React JS</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>Node JS</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>MongoDB</h5></span
+                ><br />
+                <a href="https://github.com/shashwat0770/ChatVista" target="_blank"  class="read-more-btn link">Click here to visit GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/piceditor.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3 class="card-title">Metro Application</h3>
+                <p>The Metro application, built using data structures and algorithms in Java, provides 
+                  efficient route planning, shortest path navigation, and real-time updates for 
+                  seamless travel. </p>
+                <span class="badge bg-secondary badge-pill"><h5>Java</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>Data Structures</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>Algorithms</h5></span
+                ><br />
+                <a href="https://github.com/shashwat0770/Metro-Application" target="_blank"  class="read-more-btn link">Click here to visit GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3 class="card-title">Fitness Connection</h3>
+                <p>Fitness Connection is a gym website offering personalized coaching, customized diet 
+                  plans, and immediate medical assistance, ensuring a safe and effective fitness journey. </p>
+                <span class="badge bg-secondary badge-pill"><h5>HTML & CSS</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>JavaScript</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>BootStrap</h5></span
+                ><br />
+                <a href="https://fitness-connection.netlify.app/"  target="_blank"  class="read-more-btn link">Click here to visit Live Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/lang-translator.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title">Crop Disease Predictor</h3>
+                <p>The Crop Disease Predictor is an AI-powered application using TensorFlow and Kaggle 
+                  datasets to detect plant diseases early, helping farmers take preventive measures for 
+                  healthier crops. </p>
+                <span class="badge bg-secondary badge-pill"><h5>AI ML</h5></span>
+                <span class="badge bg-secondary badge-pill"><h5>Tensorflow</h5></span>
+                <span class="badge bg-secondary badge-pill mb-2"><h5>Kaggle</h5></span
+                ><br />
+                <a href="https://github.com/shashwat0770/AgriGo--Crop-Disease-Predictor-" target="_blank"  class="read-more-btn link">Click here to visit Github Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+    
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up"><u>Contact Details </u></h3>
+      <h3 class="text-white pt-4" data-aos="fade-up">Email : shashwattripathi088@gmail.com<br>Contact number : 9140308500 </h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">Spotlight</a>
+        <div class="vr"></div>
+        <a href="#service">Skills</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Projects</a>
+        
+      </div>
+      
+      <hr class="text-muted my-4" />
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
